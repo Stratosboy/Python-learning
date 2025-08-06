@@ -8,8 +8,8 @@ with os.scandir() as dir_entries:
 
 
 
-f1 = open( r"C:\Users\GFG0578\New folder\intro.txt")
-f2 = open(r"C:\Users\GFG0578\New folder\intro (1).txt")
+f1 = open( r"intro.txt")
+f2 = open(r"intro (1).txt")
 
 f1_data = f1.readlines()
 f2_data = f2.readlines()
