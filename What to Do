@@ -10,3 +10,14 @@ Branch
 Push
 Merge
 
+
+Compare two files
+Ask to open a file1
+check file size < 20MB (could make bigger)
+Ask to  Open file 2
+Check file size < 20MB
+Compare files
+Show differences? How?
+Show 2 files side by side, Highhlight differences
+or line by line?
+Ask to write a file with differences in? 
