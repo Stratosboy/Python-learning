@@ -1,0 +1,29 @@
+import os
+
+with os.scandir() as dir_entries:
+    for entry in dir_entries:
+        info = entry.stat()
+        print(info.st_mtime)
+
+
+
+
+f1 = open( r"C:\Users\GFG0578\New folder\intro.txt")
+f2 = open(r"C:\Users\GFG0578\New folder\intro (1).txt")
+
+f1_data = f1.readlines()
+f2_data = f2.readlines()
+
+i = 0
+
+for line1, line2 in zip(f1_data, f2_data):
+    i += 1
+    if line1 == line2:
+        print(f"Line {i}: IDENTICAL")
+    else:
+        print(f"Line {i}:")
+        print(f"\tFile 1: {line1.strip()}")
+        print(f"\tFile 2: {line2.strip()}")
+
+f1.close()
+f2.close()
